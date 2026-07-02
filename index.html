@@ -244,6 +244,14 @@
     grid-template-columns:repeat(4,1fr);
     gap:16px;
   }
+  .insta-embed-grid{
+    margin-top:28px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:16px;
+    align-items:start;
+  }
+  .insta-embed-grid iframe{margin:0 auto !important;}
   .insta-card .thumb{
     position:relative;
     aspect-ratio:3/4;
@@ -267,6 +275,7 @@
     .prop-grid{grid-template-columns:1fr;}
     .testi-grid{grid-template-columns:1fr 1fr;}
     .insta-grid{grid-template-columns:1fr 1fr;}
+    .insta-embed-grid{grid-template-columns:1fr 1fr;}
   }
   @media (max-width:560px){
     .testi-grid{grid-template-columns:1fr;}
@@ -471,30 +480,29 @@
 <section class="section">
   <div class="section-inner center">
     <h2>📷 Nos acompanhe no <span class="accent-teal">Instagram</span></h2>
-    <div class="insta-grid" style="text-align:left;">
-      <div class="insta-card">
-        <a class="thumb" style="--c1:#1c6b3e; --c2:#0f2318;" href="https://www.instagram.com/p/DaAk4LVuvxn/" target="_blank" rel="noopener"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></a>
-        <div class="meta"><span class="handle">@vitor.s.b</span><a class="cta" href="https://www.instagram.com/p/DaAk4LVuvxn/" target="_blank" rel="noopener">Ver post no Instagram →</a></div>
-      </div>
-      <div class="insta-card">
-        <a class="thumb" style="--c1:#d98953; --c2:#7a4a2a;" href="https://www.instagram.com/p/DZALD_uFqqw/?img_index=1" target="_blank" rel="noopener"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></a>
-        <div class="meta"><span class="handle">@vitor.s.b</span><a class="cta" href="https://www.instagram.com/p/DZALD_uFqqw/?img_index=1" target="_blank" rel="noopener">Ver post no Instagram →</a></div>
-      </div>
-      <div class="insta-card">
-        <a class="thumb" style="--c1:#2ca9e1; --c2:#155a80;" href="https://www.instagram.com/p/DZvAMytDn-c/?img_index=1" target="_blank" rel="noopener"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></a>
-        <div class="meta"><span class="handle">@vitor.s.b</span><a class="cta" href="https://www.instagram.com/p/DZvAMytDn-c/?img_index=1" target="_blank" rel="noopener">Ver post no Instagram →</a></div>
-      </div>
-      <div class="insta-card">
-        <a class="thumb" style="--c1:#f2994a; --c2:#8a4d1a;" href="https://www.instagram.com/p/CWiUHNZL6cS/" target="_blank" rel="noopener"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></a>
-        <div class="meta"><span class="handle">@vitor.s.b</span><a class="cta" href="https://www.instagram.com/p/CWiUHNZL6cS/" target="_blank" rel="noopener">Ver post no Instagram →</a></div>
-      </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner center">
+    <h2>📷 Nos acompanhe no <span class="accent-teal">Instagram</span></h2>
+    <p class="sub" style="margin-bottom:8px;">
+      <a href="https://www.instagram.com/vitor.s.b/" target="_blank" rel="noopener" style="color:var(--teal); font-weight:700;">@vitor.s.b</a>
+    </p>
+    <div class="insta-embed-grid">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DaAk4LVuvxn/" data-instgrm-version="14"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DZALD_uFqqw/" data-instgrm-version="14"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DZvAMytDn-c/" data-instgrm-version="14"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CWiUHNZL6cS/" data-instgrm-version="14"></blockquote>
     </div>
+    <a href="https://www.instagram.com/vitor.s.b/" target="_blank" rel="noopener" style="display:inline-block; margin-top:24px; background:var(--teal); color:#fff; font-weight:700; font-size:14.5px; padding:13px 26px; border-radius:100px;">Ver Instagram →</a>
   </div>
 </section>
 
 <footer>
   <div class="domain">vitorcorretor.com.br</div>
   <div class="tag">Vitor — especialista em imóveis MRV e CAIXA em Campos dos Goytacazes e Macaé</div>
+  <div class="tag" style="margin-top:4px;"><a href="https://www.instagram.com/vitor.s.b/" target="_blank" rel="noopener" style="color:#fff; opacity:0.95;">@vitor.s.b · Ver Instagram →</a></div>
   <div class="cop">© 2026 Vitor Corretor. Todos os direitos reservados.</div>
 </footer>
 
@@ -548,6 +556,8 @@
     }
   }
 </script>
+
+<script async src="//www.instagram.com/embed.js"></script>
 
 </body>
 </html>
