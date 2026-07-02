@@ -152,16 +152,17 @@
   .prop-media{
     position:relative;
     aspect-ratio:16/10;
-    background:linear-gradient(150deg, var(--bg1,#1c6b3e), var(--bg2,#0f2318));
-    display:flex; align-items:flex-end;
     overflow:hidden;
   }
-  .prop-media .buildings{
-    width:100%; display:flex; align-items:flex-end; gap:5px;
-    padding:0 14px 0;
-    height:70%;
+  .prop-media img{
+    width:100%; height:100%; object-fit:cover;
   }
-  .prop-media .buildings .b{flex:1; border-radius:3px 3px 0 0; opacity:0.92;}
+  .illustrative-tag{
+    position:absolute; bottom:12px; right:12px;
+    background:rgba(21,34,56,0.65);
+    color:#fff; font-size:10px; font-weight:600;
+    padding:4px 9px; border-radius:100px;
+  }
   .badge{
     position:absolute; top:12px; left:12px;
     padding:6px 12px;
@@ -366,17 +367,10 @@
     <div class="prop-grid">
 
       <div class="prop-card">
-        <div class="prop-media" style="--bg1:#1c6b3e; --bg2:#0f2318;">
+        <div class="prop-media">
+          <img src="ilhabela.jpg" alt="Portaria do Parque Ilhabela em Campos dos Goytacazes">
           <span class="badge blue">Lançamento</span>
-          <span class="photos-badge">📷 empreendimento</span>
-          <div class="buildings">
-            <div class="b" style="height:55%; background:#d98953;"></div>
-            <div class="b" style="height:82%; background:#f0d9a8;"></div>
-            <div class="b" style="height:44%; background:#e8c87a;"></div>
-            <div class="b" style="height:72%; background:#d98953;"></div>
-            <div class="b" style="height:58%; background:#f0d9a8;"></div>
-            <div class="b" style="height:90%; background:#e8c87a;"></div>
-          </div>
+          <span class="illustrative-tag">Imagem ilustrativa</span>
         </div>
         <div class="prop-info">
           <div class="title">Parque Ilhabela</div>
@@ -392,17 +386,10 @@
       </div>
 
       <div class="prop-card">
-        <div class="prop-media" style="--bg1:#1c6b3e; --bg2:#0f2318;">
+        <div class="prop-media">
+          <img src="marbelle.jpg" alt="Portaria do Marbelle Residence em Macaé">
           <span class="badge orange">Super Lançamento</span>
-          <span class="photos-badge">📷 empreendimento</span>
-          <div class="buildings">
-            <div class="b" style="height:48%; background:#e8c87a;"></div>
-            <div class="b" style="height:78%; background:#d98953;"></div>
-            <div class="b" style="height:63%; background:#f0d9a8;"></div>
-            <div class="b" style="height:40%; background:#e8c87a;"></div>
-            <div class="b" style="height:86%; background:#d98953;"></div>
-            <div class="b" style="height:56%; background:#f0d9a8;"></div>
-          </div>
+          <span class="illustrative-tag">Imagem ilustrativa</span>
         </div>
         <div class="prop-info">
           <div class="title">Marbelle Residence</div>
@@ -486,20 +473,20 @@
     <h2>📷 Nos acompanhe no <span class="accent-teal">Instagram</span></h2>
     <div class="insta-grid" style="text-align:left;">
       <div class="insta-card">
-        <a class="thumb" style="--c1:#1c6b3e; --c2:#0f2318;" href="https://www.instagram.com/vitor.s.b/" target="_blank" rel="noopener"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></a>
-        <div class="meta"><span class="handle">@vitor.s.b</span><a class="cta" href="https://www.instagram.com/vitor.s.b/" target="_blank" rel="noopener">Ver reels no Instagram →</a></div>
+        <a class="thumb" style="--c1:#1c6b3e; --c2:#0f2318;" href="https://www.instagram.com/p/DaAk4LVuvxn/" target="_blank" rel="noopener"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></a>
+        <div class="meta"><span class="handle">@vitor.s.b</span><a class="cta" href="https://www.instagram.com/p/DaAk4LVuvxn/" target="_blank" rel="noopener">Ver post no Instagram →</a></div>
       </div>
       <div class="insta-card">
-        <a class="thumb" style="--c1:#d98953; --c2:#7a4a2a;" href="https://www.instagram.com/vitor.s.b/" target="_blank" rel="noopener"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></a>
-        <div class="meta"><span class="handle">@vitor.s.b</span><a class="cta" href="https://www.instagram.com/vitor.s.b/" target="_blank" rel="noopener">Ver reels no Instagram →</a></div>
+        <a class="thumb" style="--c1:#d98953; --c2:#7a4a2a;" href="https://www.instagram.com/p/DZALD_uFqqw/?img_index=1" target="_blank" rel="noopener"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></a>
+        <div class="meta"><span class="handle">@vitor.s.b</span><a class="cta" href="https://www.instagram.com/p/DZALD_uFqqw/?img_index=1" target="_blank" rel="noopener">Ver post no Instagram →</a></div>
       </div>
       <div class="insta-card">
-        <a class="thumb" style="--c1:#2ca9e1; --c2:#155a80;" href="https://www.instagram.com/vitor.s.b/" target="_blank" rel="noopener"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></a>
-        <div class="meta"><span class="handle">@vitor.s.b</span><a class="cta" href="https://www.instagram.com/vitor.s.b/" target="_blank" rel="noopener">Ver reels no Instagram →</a></div>
+        <a class="thumb" style="--c1:#2ca9e1; --c2:#155a80;" href="https://www.instagram.com/p/DZvAMytDn-c/?img_index=1" target="_blank" rel="noopener"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></a>
+        <div class="meta"><span class="handle">@vitor.s.b</span><a class="cta" href="https://www.instagram.com/p/DZvAMytDn-c/?img_index=1" target="_blank" rel="noopener">Ver post no Instagram →</a></div>
       </div>
       <div class="insta-card">
-        <a class="thumb" style="--c1:#f2994a; --c2:#8a4d1a;" href="https://www.instagram.com/vitor.s.b/" target="_blank" rel="noopener"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></a>
-        <div class="meta"><span class="handle">@vitor.s.b</span><a class="cta" href="https://www.instagram.com/vitor.s.b/" target="_blank" rel="noopener">Ver reels no Instagram →</a></div>
+        <a class="thumb" style="--c1:#f2994a; --c2:#8a4d1a;" href="https://www.instagram.com/p/CWiUHNZL6cS/" target="_blank" rel="noopener"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></a>
+        <div class="meta"><span class="handle">@vitor.s.b</span><a class="cta" href="https://www.instagram.com/p/CWiUHNZL6cS/" target="_blank" rel="noopener">Ver post no Instagram →</a></div>
       </div>
     </div>
   </div>
